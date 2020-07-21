@@ -2,12 +2,14 @@ import 'package:componentes/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
 import 'package:componentes/src/providers/menu_provider.dart';
 
+import 'package:componentes/app_localizations.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Componentes'),
+        title: Text(AppLocalizations.of(context).translate('titulo_app_bar')),
       ),
       body: _lista(),
     );
